@@ -6,7 +6,11 @@ const APIFeatures = require("../utils/apiFeatures");
 
 //Get Products
 exports.getProducts = async (req, res, next) => {
-  const apiFeatures = new APIFeatures(Product.find(), req.query).search();
+  const resPerPage = 2;
+  const apiFeatures = new APIFeatures(Product.find(), req.query)
+    .search()
+    .filter()
+    .paginate(resPerPage);
 
   const products = await apiFeatures.query;
   res.status(200).json({
