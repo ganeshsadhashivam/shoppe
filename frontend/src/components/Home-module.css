@@ -1,0 +1,22 @@
+.home {
+  height: 100vh;
+  background-color: #f4f4f5;
+}
+
+.products {
+  background-color: white;
+
+  display: flex;
+  justify-content: space-evenly;
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+}
+
+.product-container {
+  border: 1px solid gray;
+  height: 100%;
+}
+
+.product-container img {
+  width: 250px;
+}

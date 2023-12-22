@@ -1,0 +1,24 @@
+.footer {
+  background-color: rgb(13, 13, 64);
+  height: 50vh;
+  color: white;
+}
+
+.footer-layout {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.footer-layout div {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.footer-layout ul {
+  list-style: none;
+}
+
+hr {
+  background-color: white;
+  width: 1px;
+}
