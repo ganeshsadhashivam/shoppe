@@ -1,0 +1,11 @@
+.header {
+  background: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
