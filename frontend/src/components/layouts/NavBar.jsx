@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar-module.css";
+import Dropdown from "../Dropdown";
 const Navbar = () => {
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+
   return (
     <div className="navbar">
       <ul>
-        <li>Electronics</li>
+        <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          Electronics
+          {isDropdownVisible && <Dropdown />}
+        </li>
         <li>Tv&Appliances</li>
         <li>Men</li>
         <li>Women</li>

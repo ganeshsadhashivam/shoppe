@@ -8,8 +8,10 @@
 
   display: flex;
   justify-content: space-evenly;
+  margin: 1rem 0;
+  overflow: hidden;
   /* display: grid;
-  grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(8, 100px); */
 }
 
 .product-container {
@@ -18,5 +20,16 @@
 }
 
 .product-container img {
-  width: 250px;
+  /* position: relative; */
+  height: 250px;
+  width: 100%;
+  /* z-index: 0; */
+}
+
+#name,
+#price {
+  /* position: absolute;
+  z-index: 1; */
+  display: block;
+  text-align: center;
 }
